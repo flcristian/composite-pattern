@@ -1,10 +1,10 @@
 namespace composite_pattern;
 
-public class ICompoundGraphic : IGraphic
+public class CompoundGraphic : IGraphic
 {
     public List<IGraphic> Children { get; set; }
 
-    public ICompoundGraphic(List<IGraphic> children)
+    public CompoundGraphic(List<IGraphic> children)
     {
         this.Children = children;
     }
